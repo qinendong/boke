@@ -1,0 +1,32 @@
+$primary:#ffc90c;
+$primary_to:#ffb20c;
+$dark:#333;
+$bg:#555;
+$fz:#303133;
+$fc:#606266;
+$fci:#909399;
+
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin sc($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin fj($type:space-between) {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-justify-content: $type;
+    justify-content: $type;
+}
+
+@mixin bg($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

@@ -1,0 +1,162 @@
+@import "~/assets/styles/mixin.scss";
+@import "~/assets/boostrap/css/bootstrap.css";
+@charset "utf-8";
+/* reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,textarea,p,blockquote,th,td,a,img,span {
+	margin:0;
+	padding:0;
+    
+}
+body{
+    background: #eee;
+}
+h3{
+    color: $fz;
+}
+p{
+    color: $fc;
+}
+/*span{
+    color: $fci;
+}*/
+pre{
+    background: #2b303b;
+    line-height: 1rem;
+    overflow:auto;
+    color: #ccc;
+    padding: 20px;
+    .hljs-attr{
+        color: #8fa1b3;
+    }
+}
+input,textarea,select {
+	font-family:inherit;
+	font-size:inherit;
+	*font-size: 100%;
+	font-weight:inherit;
+	outline:none;
+}
+a{
+	color: #3084bb;  
+}
+a, a:hover, a:focus, a:visited {
+	text-decoration: none;
+}
+a:focus,
+a:active,button::-moz-focus-inner,input[type="reset"]::-moz-focus-inner,input[type="button"]::-moz-focus-inner,input[type="submit"]::-moz-focus-inner,select::-moz-focus-inner,input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border: 0;
+}
+input[type='button'],input[type='submit'] {
+	border:0;
+}
+ol,ul,li {
+	list-style-type:none;
+	list-style: none;
+}
+img {
+	vertical-align:middle;
+	border:0;
+}
+button,a {
+	cursor: pointer;
+	outline: none;
+}
+table{
+	border-collapse:collapse; 
+	border-spacing:0;
+}
+html,body {
+	height: 100%;
+}
+body{
+  font-size: 14px;
+  overflow-x: hidden;
+  word-break: break-word;
+  word-break: break-all;
+}
+* {
+	box-sizing: border-box;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*button*/
+.btn{
+	display:inline-block;
+	border:none;
+	color:#fff;
+	padding:8px 14px;
+	border-radius:3px;
+	transition: background-color ease 0.2s; 
+}
+.btn-small{
+	padding:3px 6px;
+	border-radius:2px;
+}
+.btn-large{
+	padding:10px 20xp;
+	font-size: 16px;
+	border-radius:4px;
+}
+.btn-default{
+	background:rgb(235,235,235);
+	color:rgb(80,80,80)
+}
+.btn-default:hover{
+	background:rgb(220,220,220);
+}
+.btn-main{
+	background: rgb(51, 204, 250);
+}
+.btn-main:hover{
+	background: rgb(31, 184, 230);
+}
+.btn-danger{
+	background: rgb(255, 64, 129);
+}
+.btn-danger:hover{
+	background: rgb(245, 54, 119);
+}
+.btn-group .btn{
+	margin: 0 5px;
+}
+.btn-group .btn:first-child{
+	margin-left: 0px;
+}
+.btn-group .btn:last-child{
+	margin-right: 0
+}
+
+
+#__nuxt {
+    height: 100%;
+}
+.app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.app>div{
+    flex: 1 0 auto;
+}
+header,footer {
+    flex: 0 0 auto;
+}
+
+/*页面过度动画*/
+
+
+.page-enter-active {
+  transition: all .3s ease;
+}
+.page-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.page-enter, .page-leave-to
+{
+  transform: translateX(10px);
+  opacity: 0;
+}
+
