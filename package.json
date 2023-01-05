@@ -29,7 +29,7 @@
     "multer": "^1.4.1",
     "mysql": "^2.16.0",
     "node-uuid": "^1.4.8",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "qr-image": "^3.2.0",
     "vue-aplayer": "^1.6.1",
     "vue-highlight.js": "^2.2.0",
